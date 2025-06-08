@@ -34,6 +34,66 @@ pip install -r requirements.txt  # If needed
 ```
 
 ---
+## 🤑 Or just use this code
+
+```bash
+pip install -r requirements.txt  # If needed
+
+import requests
+import tkinter as tk
+from tkinter import filedialog
+
+# Hide the root Tkinter window
+root = tk.Tk()
+root.withdraw()
+
+webhook_url = input("Enter webhook URL: ")
+
+input_type = input("Select send type (1: Message, 2: File): ")
+
+if input_type == "1":
+    while True:
+        message = input("Enter message to send (or type 'exit' to quit): ")
+        if message.lower() == "exit":
+            break
+
+        data = {
+            "content": message
+        }
+
+        response = requests.post(webhook_url, json=data)
+
+        if response.status_code == 204:
+            print("Message sent successfully!")
+        else:
+            print(f"Failed to send message: {response.status_code}")
+
+elif input_type == "2":
+    while True:
+        print("Select an image or file to send (press Cancel to exit)...")
+        file_path = filedialog.askopenfilename()
+
+        if not file_path:
+            print("Goodbye!")
+            break
+
+        try:
+            with open(file_path, 'rb') as f:
+                files = {
+                    "file": f
+                }
+                response = requests.post(webhook_url, files=files)
+
+            if response.status_code in [200, 204]:
+                print("File sent successfully!")
+            else:
+                print(f"Failed to send file: {response.status_code}")
+        except Exception as e:
+            print(f"Could not open file: {e}")
+
+```
+
+---
 
 ## ▶️ Usage
 
