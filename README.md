@@ -9,7 +9,8 @@ A simple Python tool to send messages or files to multiple webhooks (Discord, Sl
 Send messages or upload files to multiple platforms at once.
 Supports Discord, Slack (webhook & API), Teams, Google Chat, and generic JSON webhooks.
 <br>
-![preview](Preview.png)
+
+![Preview](https://github.com/Kaokys/playing-around-w-webhook/blob/main/preview.png)
 ---
 
 ## ⚙️ Features
@@ -237,3 +238,6 @@ Follow the prompts:
 * **tkinter** (usually included with Python)
 
 ---
+## Enjoy🤑🤑🤑
+
+![e](https://github.com/Kaokys/playing-around-w-webhook/blob/main/cat-laundry.gif)
