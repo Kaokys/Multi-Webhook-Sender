@@ -26,7 +26,7 @@ Supports Discord, Slack (webhook & API), Teams, Google Chat, and generic JSON we
 
 ---
 ## DownloaD da file 
->![webhooksender.py](https://github.com/Kaokys/Multi-Webhook-Sender/blob/main/webhooksender.py)
+>[webhooksender.py](https://github.com/Kaokys/Multi-Webhook-Sender/blob/main/webhooksender.py)
 
 
 ## 🤑 OR Just use this code
