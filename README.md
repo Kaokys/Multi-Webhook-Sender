@@ -2,6 +2,7 @@
 
 A simple Python tool to send messages or files to multiple webhooks (Discord, Slack, Teams, Google Chat, Generic) with **English and Thai** support.
 
+![Preview](https://github.com/Kaokys/Multi-Webhook-Sender/blob/main/webhooksender.png)
 ---
 
 ## 📸 Preview
